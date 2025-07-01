@@ -70,7 +70,7 @@ const handler = async (req: Request): Promise<Response> => {
       `;
 
       return resend.emails.send({
-        from: "نشرة الموقع <newsletter@yoursite.com>",
+        from: "نشرة الموقع <alyazansal@gmail.com>",
         to: [subscriber.email],
         subject: `${type === 'article' ? 'مقال جديد' : 'رحلة شركة جديدة'}: ${title}`,
         html: emailContent,
